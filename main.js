@@ -6,6 +6,11 @@ let ctx = cnv.getContext("2d");
 cnv.width = 300;
 cnv.height = 650;
 
+windX = 170
+windNum = 0
+windY = 370
+windNum2 = 0
+
 // BLUE BACKGROUND
 ctx.fillStyle = "blue";
 ctx.fillRect(0, 0, cnv.width, cnv.height);
@@ -31,3 +36,15 @@ ctx.fillRect(150, 100, 150, 550);
 ctx.fillRect(170, 40, 110, 60);
 // Small Top
 ctx.fillRect(190, 20, 70, 20);
+
+for (windNum = 0; windNum < 5; windNum++) {
+    ctx.fillStyle = "white"
+    ctx.fillRect(windX, 120, 15, 500)
+    windX += 25
+}
+
+for (windNum2 = 0; windNum2 < 6; windNum2++) {
+    ctx.fillStyle = "white"
+    ctx.fillRect(20, windY, 110, 25)
+    windY += 45
+}
