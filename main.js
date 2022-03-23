@@ -48,3 +48,13 @@ for (windNum2 = 0; windNum2 < 6; windNum2++) {
     ctx.fillRect(20, windY, 110, 25)
     windY += 45
 }
+let x = 25;
+for(let n = 0; n < 4; n++){
+    let y = 200;
+    x += 20
+    for(let m = 0; m < 6; m++) {
+        ctx.fillStyle = "white";
+        ctx.fillRect(x, y, 10, 10);
+        y += 20
+    }
+}
